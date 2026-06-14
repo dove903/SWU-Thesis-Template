@@ -1,0 +1,139 @@
+% ============================================
+% 西南大学本科毕业论文（设计）
+% 编译：双击 compile.bat
+% ============================================
+\documentclass[12pt,a4paper]{swuthesis}
+
+\usepackage{graphicx}
+\usepackage{mhchem}
+\usepackage{siunitx}
+
+\addbibresource{reference.bib}
+
+% ============================================
+% 以下信息按实际情况修改
+% ============================================
+\title{论文题目（二号宋体，不超过20字）}
+\swucollege{学院名称}
+\swumajor{专业名称}
+\swuauthorid{学号}
+\swuauthor{姓名}
+\swuadvisor{指导教师}
+\swudate{2029年5月}
+\swuentitle{English Title}
+\swuenname{Name}
+\swuencollege{College Name}
+\swuabstract{%
+这里是中文摘要，约300字，简要说明研究目的、方法、结果和结论。}
+\swuenabstract{%
+English abstract here, about 250 words.}
+\swukeywords{关键词A；关键词B；关键词C；关键词D}
+\swuenkeywords{KeywordA; KeywordB; KeywordC; KeywordD}
+
+% ============================================
+\begin{document}
+
+\maketitle           % 封面
+\makedeclaration     % 独创声明
+\makecontents        % 目录
+\makeabstract        % 中英文摘要
+
+% ==================== 第1章 导论 ====================
+\section{导论}
+
+\subsection{研究背景与意义}
+
+正文宋体小四号，1.5倍行距。首行自动缩进。此处撰写研究背景、意义、目的、现状等。
+
+引用示例：PDMS具有优异的疏水性能\citeup{zhang2023}。Wenzel模型描述了粗糙表面的润湿行为\citeup{wenzel1936}。
+
+\subsection{国内外研究现状}
+
+\subsubsection{国外研究现状}
+
+国外研究……
+
+\subsubsection{国内研究现状}
+
+国内研究……
+
+\subsection{研究内容}
+
+本文主要研究……
+
+% ==================== 第2章 实验部分 ====================
+\newpage
+\section{实验部分}
+
+\subsection{试剂与仪器}
+
+\subsubsection{实验试剂}
+
+实验试剂如\ref{tab:reagents}所示。
+
+\begin{table}[H]\centering
+    \caption{\zihao{5} 实验试剂}
+    \addtocounter{table}{-1}
+    \renewcommand{\tablename}{Table}
+    \caption{\zihao{5} Experimental reagents}
+    \renewcommand{\tablename}{表}
+    \label{tab:reagents}
+    \begin{tabular}{cccc}\toprule
+        试剂 & 规格 & 厂家 & 用途 \\\midrule
+        PDMS & AR & 道康宁 & 基底 \\
+        固化剂 & AR & 道康宁 & 交联 \\\bottomrule
+    \end{tabular}
+\end{table}
+
+\subsubsection{实验方法}
+
+PDMS薄膜制备：……
+
+接触角测量使用Young方程：
+\begin{equation}
+    \cos\theta = \frac{\gamma_{SV} - \gamma_{SL}}{\gamma_{LV}}
+    \label{eq:young}
+\end{equation}
+
+% ==================== 第3章 结果与讨论 ====================
+\newpage
+\section{结果与讨论}
+
+\subsection{润湿性能分析}
+结果如\ref{fig:ca}所示。
+
+\begin{figure}[H]\centering
+    \fbox{\parbox{0.5\textwidth}{\centering\vspace{3cm}插入接触角图片}}
+    \caption{\zihao{5} 水接触角测量结果}
+    \addtocounter{figure}{-1}
+    \renewcommand{\figurename}{Fig.}
+    \caption{\zihao{5} Water contact angle results}
+    \renewcommand{\figurename}{图}
+    \label{fig:ca}
+\end{figure}
+
+\subsection{讨论}
+分析表明……
+
+% ==================== 第4章 结论 ====================
+\newpage
+\section{结论}
+
+\begin{enumerate}
+    \item 结论一。
+    \item 结论二。
+    \item 结论三。
+\end{enumerate}
+
+% ==================== 参考文献 ====================
+\makereference
+
+% ==================== 致谢 ====================
+\makethanks{感谢导师悉心指导。感谢课题组同窗帮助。感谢家人支持。}
+
+% ==================== 附录（需要时取消注释） ====================
+% \makeappendix
+% \subsection{附录A  实验数据}
+% 附录内容……
+
+\end{document}
