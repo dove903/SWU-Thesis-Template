@@ -1,0 +1,19 @@
+# LaTeX 编译临时文件
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.bcf
+*.run.xml
+*.fls
+*.fdb_latexmk
+
+# 编译输出（用户自行编译）
+main.pdf
+
+# 系统文件
+Thumbs.db
+.DS_Store
